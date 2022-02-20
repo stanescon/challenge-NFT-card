@@ -1,0 +1,95 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+body:active {
+    cursor: pointer;
+}
+.cartao {
+    margin: 100px auto;
+    padding: 30px;
+    width: 320px;
+    height: 650px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px hsl(215deg 83% 9%) ;
+}
+.conteudo-cartao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+.imagem-cartao {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+}
+.icon-olho {
+    display: block;
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+    top: 270px;
+    opacity: 0;
+}
+.imagem-cartao:active {
+    filter: opacity(0.5) drop-shadow(0 0 0 hsl(178, 100%, 50%));
+}
+.imagem-cartao:active + .icon-olho {
+    opacity: 1;
+}
+.imagem-cartao, .titulo-cartao, .texto-cartao {
+    grid-column: span 2;
+    margin: 10px 0;
+}
+.titulo-cartao {
+    font-size: 19px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+.titulo-cartao:active {
+    color: hsl(178, 100%, 50%);
+}
+.texto-cartao {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 18px;
+    color: hsl(0, 0%, 50%);
+}
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+.icon-eth {
+    margin-right: 10px;
+}
+.dias-restantes {
+    color: hsl(0, 0%, 50%);
+    font-weight: bold;
+    justify-self: self-end;
+}
+.icon-relogio {
+    margin-right: 10px;
+}
+.avatar-autor{
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    grid-column: span 2;
+    border-top: 1px solid hsl(0, 0%, 50%) ;
+}
+.avatar {
+    width: 50px;
+    margin: 20px;
+    border-radius: 50px;
+    border: 2px solid #FFFFFF;
+}
+.autor-cartao {
+    color: hsl(0, 0%, 50%);
+    font-weight: bold;
+    font-size: 18px;
+}
+.autor-cartao span:active {
+    color: hsl(178, 100%, 50%);
+}
